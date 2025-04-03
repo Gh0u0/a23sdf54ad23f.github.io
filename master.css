@@ -1,0 +1,212 @@
+/* Стили для секции мастера */
+.master-section {
+  padding: 60px 0;
+  background-color: #111;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.master-card {
+  display: flex;
+  gap: 40px;
+  background-color: #222;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Галерея */
+.master-gallery {
+  flex: 0 0 45%;
+  max-width: 45%;
+}
+
+.gallery-main {
+  width: 100%;
+  height: 500px;
+  border: 2px solid #d4af37; /* золотой цвет */
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.gallery-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-thumbs {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 5px;
+}
+
+.thumb {
+  width: 80px;
+  height: 60px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.thumb.active {
+  border-color: #d4af37; /* золотой цвет */
+}
+
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Информация о мастере */
+.master-info {
+  flex: 1;
+}
+
+.section-title {
+  color: #d4af37; /* золотой цвет */
+  font-size: 32px;
+  margin: 0 0 10px;
+}
+
+.master-position {
+  font-size: 18px;
+  color: #d4af37; /* золотой цвет */
+  opacity: 0.8;
+  margin-bottom: 15px;
+}
+
+.master-rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.stars {
+  color: #d4af37; /* золотой цвет */
+}
+
+.rating-number {
+  font-weight: bold;
+}
+
+.master-experience {
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.master-bio {
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.master-bio p {
+  margin-bottom: 15px;
+  color: #ddd;
+}
+
+/* Расписание */
+.master-schedule {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid rgba(212, 175, 55, 0.3); /* полупрозрачный золотой */
+}
+
+.master-schedule h3 {
+  color: #d4af37; /* золотой цвет */
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.schedule-list {
+  margin-bottom: 20px;
+}
+
+.schedule-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.schedule-item:last-child {
+  border-bottom: none;
+}
+
+.day {
+  font-weight: 500;
+}
+
+.time {
+  color: #d4af37; /* золотой цвет */
+}
+
+.gold-button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #d4af37; /* золотой цвет */
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.gold-button:hover {
+  background-color: #c1a032;
+}
+
+/* Адаптивная верстка */
+@media (max-width: 992px) {
+  .master-card {
+    flex-direction: column;
+  }
+
+  .master-gallery,
+  .master-info {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .gallery-main {
+    height: 400px;
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery-main {
+    height: 300px;
+  }
+
+  .thumb {
+    width: 60px;
+    height: 45px;
+  }
+
+  .section-title {
+    font-size: 26px;
+  }
+
+  .master-position {
+    font-size: 16px;
+  }
+}

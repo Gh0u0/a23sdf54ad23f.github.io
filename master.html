@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Excalibur | Премиальный массажный салон</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="/script.js"></script>
+    <script src="/master.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <!-- Навигация -->
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="#" class="logo"
+            ><img
+              src="/assets/exc-logo.svg"
+              alt="Excalibur logo"
+              width="200px"
+              height="70px"
+          /></a>
+          <ul class="nav-menu" id="nav-menu">
+            <li><a href="#about" class="nav-link">О нас</a></li>
+            <li><a href="#services" class="nav-link">Услуги</a></li>
+            <li><a href="#portfolio" class="nav-link">Портфолио</a></li>
+            <li><a href="#gallery" class="nav-link">Галерея</a></li>
+            <li><a href="#contact" class="nav-link">Контакты</a></li>
+          </ul>
+          <div class="hamburger" id="hamburger-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="master-section">
+      <div class="container">
+        <div class="master-container">
+          <!-- Левая часть - слайдер с изображениями -->
+          <div class="master-slider">
+            <div class="slider-main">
+              <img
+                src="img/master1.jpg"
+                alt="Мастер фото"
+                class="active-slide"
+              />
+              <!-- Дополнительные изображения добавятся при помощи JavaScript -->
+            </div>
+            <div class="slider-navigation">
+              <button class="slider-arrow prev">←</button>
+              <div class="slider-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+              </div>
+              <button class="slider-arrow next">→</button>
+            </div>
+            <div class="slider-thumbs">
+              <img
+                src="img/master1.jpg"
+                alt="миниатюра 1"
+                class="active-thumb"
+              />
+              <img src="img/master2.jpg" alt="миниатюра 2" />
+              <img src="img/master3.jpg" alt="миниатюра 3" />
+              <img src="img/master4.jpg" alt="миниатюра 4" />
+            </div>
+          </div>
+
+          <!-- Правая часть - информация о мастере -->
+          <div class="master-info">
+            <h2 class="master-name">Анна Волкова</h2>
+            <p class="master-position">Ведущий мастер-массажист</p>
+
+            <div class="master-rating">
+              <div class="stars">
+                <i class="star filled"></i>
+                <i class="star filled"></i>
+                <i class="star filled"></i>
+                <i class="star filled"></i>
+                <i class="star half"></i>
+              </div>
+              <span class="rating-value">4.8</span>
+            </div>
+
+            <div class="master-experience">
+              <span>Опыт работы: 7 лет</span>
+            </div>
+
+            <div class="master-description">
+              <p>
+                Анна — сертифицированный специалист по различным техникам
+                массажа с опытом работы более 7 лет. Регулярно повышает
+                квалификацию и осваивает новые методики.
+              </p>
+              <p>
+                Владеет техниками: классический массаж, спортивный массаж,
+                лимфодренажный массаж, антицеллюлитный массаж, массаж горячими
+                камнями.
+              </p>
+              <p>
+                Индивидуальный подход к каждому клиенту позволяет достичь
+                максимальных результатов.
+              </p>
+            </div>
+
+            <!-- Расписание мастера -->
+            <div class="master-schedule">
+              <h3>Расписание работы</h3>
+              <div class="schedule-items">
+                <div class="schedule-item">
+                  <span class="schedule-day">Понедельник - Пятница</span>
+                  <span class="schedule-time">10:00 - 20:00</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-day">Суббота</span>
+                  <span class="schedule-time">11:00 - 18:00</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="schedule-day">Воскресенье</span>
+                  <span class="schedule-time">Выходной</span>
+                </div>
+              </div>
+              <button class="book-button">Записаться</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Свяжитесь с нами</h2>
+        <div class="contact-container">
+          <form class="contact-form">
+            <input type="text" placeholder="Ваше имя" required />
+            <input type="tel" placeholder="Ваш телефон" required />
+            <input type="email" placeholder="Ваш email" required />
+            <select>
+              <option value="" disabled selected>Выберите услугу</option>
+              <option value="classic">Классический массаж</option>
+              <option value="thai">Тайский массаж</option>
+              <option value="stones">Массаж горячими камнями</option>
+              <option value="anticellulite">Антицеллюлитный массаж</option>
+              <option value="other">Другое</option>
+            </select>
+            <textarea placeholder="Ваше сообщение"></textarea>
+            <button type="submit">Отправить заявку</button>
+          </form>
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="contact-info-text">
+                <h3>Адрес</h3>
+                <p>Санкт-Петербург</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <i class="fas fa-phone-alt"></i>
+              <div class="contact-info-text">
+                <h3>Телефон</h3>
+                <p>+7 (999) 123-45-67</p>
+                <p>+7 (495) 987-65-43</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <i class="fas fa-envelope"></i>
+              <div class="contact-info-text">
+                <h3>Email</h3>
+                <p>info@excalibur-spa.ru</p>
+                <p>booking@excalibur-spa.ru</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <i class="fas fa-clock"></i>
+              <div class="contact-info-text">
+                <h3>Часы работы</h3>
+                <p>Пн-Пт: 9:00 - 21:00</p>
+                <p>Сб-Вс: 10:00 - 20:00</p>
+              </div>
+            </div>
+            <div class="contact-social">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-vk"></i></a>
+              <a href="#"><i class="fab fa-telegram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Карта -->
+    <section class="map">
+      <div class="map-container">
+        <!-- Здесь будет iframe с Google Maps или Яндекс.Картами -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.3801981622246!2d37.58959377680467!3d55.74953297346039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a50b315e573%3A0xa886bf5a3d9b2e68!2sArbat%20St%2C%2025%2C%20Moscow%2C%20Russia!5e0!3m2!1sen!2s!4v1625574284797!5m2!1sen!2s"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h3>EXCALIBUR</h3>
+            <p>Премиальный массажный салон</p>
+          </div>
+          <div class="footer-links">
+            <div class="footer-links-column">
+              <h4>Меню</h4>
+              <ul>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#team">Специалисты</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#contact">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="footer-links-column">
+              <h4>Услуги</h4>
+              <ul>
+                <li><a href="#services">Классический массаж</a></li>
+                <li><a href="#services">Тайский массаж</a></li>
+                <li><a href="#services">Массаж горячими камнями</a></li>
+                <li><a href="#services">Антицеллюлитный массаж</a></li>
+                <li><a href="#services">Spa-программы</a></li>
+              </ul>
+            </div>
+            <div class="footer-links-column">
+              <h4>Контакты</h4>
+              <ul>
+                <li><i class="fas fa-map-marker-alt"></i> Санкт-Петербург</li>
+                <li><i class="fas fa-phone-alt"></i> +7 (999) 123-45-67</li>
+                <li><i class="fas fa-envelope"></i> info@excalibur-spa.ru</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-vk"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+          </div>
+          <p class="footer-copyright">© 2023 EXCALIBUR. Все права защищены.</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      // Простой скрипт для бургер-меню
+      document
+        .getElementById("hamburger-btn")
+        .addEventListener("click", function () {
+          this.classList.toggle("active");
+          document.getElementById("nav-menu").classList.toggle("active");
+          console.log("Бургер кликнут");
+        });
+    </script>
+  </body>
+</html>

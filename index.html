@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Excalibur | Премиальный массажный салон</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="splide.min.css" />
+    <script src="/script.js"></script>
+    <script src="/splide.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <!-- Навигация -->
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="#" class="logo"
+            ><img
+              src="/assets/exc-logo.svg"
+              alt="Excalibur logo"
+              width="200px"
+              height="70px"
+          /></a>
+          <ul class="nav-menu" id="nav-menu">
+            <li><a href="#about" class="nav-link">О нас</a></li>
+            <li><a href="#services" class="nav-link">Услуги</a></li>
+            <li><a href="#portfolio" class="nav-link">Портфолио</a></li>
+            <li><a href="#gallery" class="nav-link">Акции</a></li>
+            <li><a href="#contact" class="nav-link">Контакты</a></li>
+          </ul>
+          <div class="hamburger" id="hamburger-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Главный экран -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <img
+            src="/assets/full-logo.svg"
+            alt="Excalibur logo"
+            width="100%"
+            height="100%"
+          />
+          <p>Премиальный массаж в Санкт-Петербурге</p>
+          <a href="#contact" class="cta-button">ЗАКАЗАТЬ ЗВОНОК</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- О нас -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">О нашем салоне</h2>
+        <div class="about-container">
+          <div class="about-content">
+            <p class="about-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p class="about-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="about-stats">
+              <div class="stat-item">
+                <h3>7+</h3>
+                <p>Лет опыта</p>
+              </div>
+              <div class="stat-item">
+                <h3>1200+</h3>
+                <p>Довольных клиентов</p>
+              </div>
+              <div class="stat-item">
+                <h3>15+</h3>
+                <p>Spa-программ</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-image" data-aos="fade-up" data-aos-offset="200">
+            <img
+              src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1"
+              alt="Массажный салон EXCALIBUR"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Услуги -->
+    <section id="services" class="services">
+      <div class="container">
+        <h2 class="section-title">Наши услуги</h2>
+        <div class="services-container">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-spa"></i>
+            </div>
+            <h3>Классический массаж</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <span class="service-price">от 3000 ₽</span>
+            <a href="#contact" class="btn">Записаться</a>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-hot-tub"></i>
+            </div>
+            <h3>Тайский массаж</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <span class="service-price">от 4500 ₽</span>
+            <a href="#contact" class="btn">Записаться</a>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-gem"></i>
+            </div>
+            <h3>Массаж горячими камнями</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <span class="service-price">от 5000 ₽</span>
+            <a href="#contact" class="btn">Записаться</a>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-hand-sparkles"></i>
+            </div>
+            <h3>Антицеллюлитный массаж</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <span class="service-price">от 3800 ₽</span>
+            <a href="#contact" class="btn">Записаться</a>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-wind"></i>
+            </div>
+            <h3>Аромамассаж</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <span class="service-price">от 4200 ₽</span>
+            <a href="#contact" class="btn">Записаться</a>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-user-md"></i>
+            </div>
+            <h3>Спортивный массаж</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <span class="service-price">от 4500 ₽</span>
+            <a href="#contact" class="btn">Записаться</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Специалисты -->
+    <section id="team" class="team">
+      <div class="container">
+        <h2 class="section-title">Наши девушки</h2>
+        <div class="team-container">
+          <div class="team-member">
+            <div class="member-image">
+              <img
+                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2"
+                alt="Мария Волкова"
+              />
+            </div>
+            <h3>Мария</h3>
+            <div class="params-wrapper">
+              <p class="girl-params">Возраст: <span>28</span></p>
+              <p class="girl-params">Рост: <span>170</span></p>
+              <p class="girl-params">Вес: <span>53</span></p>
+              <p class="girl-params">Грудь: <span>3</span></p>
+            </div>
+            <a href="tel:+78005553535" class="btn">+7 (999) 999-99-99</a>
+          </div>
+          <div class="team-member">
+            <div class="member-image">
+              <img
+                src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04"
+                alt="Александр Петров"
+              />
+            </div>
+            <h3>Александра</h3>
+            <div class="params-wrapper">
+              <p class="girl-params">Возраст: <span>28</span></p>
+              <p class="girl-params">Рост: <span>170</span></p>
+              <p class="girl-params">Вес: <span>53</span></p>
+              <p class="girl-params">Грудь: <span>3</span></p>
+            </div>
+            <a href="tel:+78005553535" class="btn">+7 (999) 999-99-99</a>
+          </div>
+          <div class="team-member">
+            <div class="member-image">
+              <img
+                src="https://images.unsplash.com/photo-1580489944761-15a19d654956"
+                alt="Екатерина Соловьева"
+              />
+            </div>
+            <h3>Екатерина</h3>
+            <div class="params-wrapper">
+              <p class="girl-params">Возраст: <span>28</span></p>
+              <p class="girl-params">Рост: <span>170</span></p>
+              <p class="girl-params">Вес: <span>53</span></p>
+              <p class="girl-params">Грудь: <span>3</span></p>
+            </div>
+            <a href="tel:+78005553535" class="btn">+7 (999) 999-99-99</a>
+          </div>
+          <div class="team-member">
+            <div class="member-image">
+              <img
+                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2"
+                alt="Мария Волкова"
+              />
+            </div>
+            <h3>Мария</h3>
+            <div class="params-wrapper">
+              <p class="girl-params">Возраст: <span>28</span></p>
+              <p class="girl-params">Рост: <span>170</span></p>
+              <p class="girl-params">Вес: <span>53</span></p>
+              <p class="girl-params">Грудь: <span>3</span></p>
+            </div>
+            <a href="tel:+78005553535" class="btn">+7 (999) 999-99-99</a>
+          </div>
+          <div class="team-member">
+            <div class="member-image">
+              <img
+                src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04"
+                alt="Александр Петров"
+              />
+            </div>
+            <h3>Александра</h3>
+            <div class="params-wrapper">
+              <p class="girl-params">Возраст: <span>28</span></p>
+              <p class="girl-params">Рост: <span>170</span></p>
+              <p class="girl-params">Вес: <span>53</span></p>
+              <p class="girl-params">Грудь: <span>3</span></p>
+            </div>
+            <a href="tel:+78005553535" class="btn">+7 (999) 999-99-99</a>
+          </div>
+          <div class="team-member">
+            <div class="member-image">
+              <img
+                src="https://images.unsplash.com/photo-1580489944761-15a19d654956"
+                alt="Екатерина Соловьева"
+              />
+            </div>
+            <h3>Екатерина</h3>
+            <div class="params-wrapper">
+              <p class="girl-params">Возраст: <span>28</span></p>
+              <p class="girl-params">Рост: <span>170</span></p>
+              <p class="girl-params">Вес: <span>53</span></p>
+              <p class="girl-params">Грудь: <span>3</span></p>
+            </div>
+            <a href="tel:+78005553535" class="btn">+7 (999) 999-99-99</a>
+          </div>
+          <div class="team-member">
+            <div class="member-image">
+              <img
+                src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04"
+                alt="Александр Петров"
+              />
+            </div>
+            <h3>Александра</h3>
+            <div class="params-wrapper">
+              <p class="girl-params">Возраст: <span>28</span></p>
+              <p class="girl-params">Рост: <span>170</span></p>
+              <p class="girl-params">Вес: <span>53</span></p>
+              <p class="girl-params">Грудь: <span>3</span></p>
+            </div>
+            <a href="tel:+78005553535" class="btn">+7 (999) 999-99-99</a>
+          </div>
+          <div class="team-member">
+            <div class="member-image">
+              <img
+                src="https://images.unsplash.com/photo-1580489944761-15a19d654956"
+                alt="Екатерина Соловьева"
+              />
+            </div>
+            <h3>Екатерина</h3>
+            <div class="params-wrapper">
+              <p class="girl-params">Возраст: <span>28</span></p>
+              <p class="girl-params">Рост: <span>170</span></p>
+              <p class="girl-params">Вес: <span>53</span></p>
+              <p class="girl-params">Грудь: <span>3</span></p>
+            </div>
+            <a href="tel:+78005553535" class="btn">+7 (999) 999-99-99</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Галерея -->
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <h2 class="section-title">Акции</h2>
+        <div class="gallery-container"></div>
+        <div class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="gallery-item">
+                  <img
+                    src="https://images.unsplash.com/photo-1600334129128-685c5582fd35"
+                    alt="Массажный кабинет"
+                  />
+                  <div class="gallery-overlay">
+                    <h3>Приватный кабинет</h3>
+                    <p>Роскошная обстановка для максимального комфорта</p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="gallery-item">
+                  <img
+                    src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874"
+                    alt="SPA процедуры"
+                  />
+                  <div class="gallery-overlay">
+                    <h3>SPA-комплекс</h3>
+                    <p>Премиальные процедуры для тела и души</p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="gallery-item">
+                  <img
+                    src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1"
+                    alt="Массаж спины"
+                  />
+                  <div class="gallery-overlay">
+                    <h3>Классический массаж</h3>
+                    <p>Профессиональные техники восстановления</p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="gallery-item">
+                  <img
+                    src="https://images.unsplash.com/photo-1470259078422-826894b933aa"
+                    alt="Зона отдыха"
+                  />
+                  <div class="gallery-overlay">
+                    <h3>Зона релаксации</h3>
+                    <p>Место, где время замедляется</p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="gallery-item">
+                  <img
+                    src="https://images.unsplash.com/photo-1515377905703-c4788e51af15"
+                    alt="Ароматерапия"
+                  />
+                  <div class="gallery-overlay">
+                    <h3>Ароматерапия</h3>
+                    <p>Натуральные масла для полного погружения</p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="gallery-item">
+                  <img
+                    src="https://images.unsplash.com/photo-1531946886055-e6850f2a7df0"
+                    alt="Массаж лица"
+                  />
+                  <div class="gallery-overlay">
+                    <h3>Уход за лицом</h3>
+                    <p>Деликатные техники омоложения</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Add the progress bar element -->
+          <div class="my-slider-progress">
+            <div class="my-slider-progress-bar"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+        <h2 class="section-title">Отзывы клиентов</h2>
+        <div class="testimonial-slider">
+          <div class="testimonial-item">
+            <div class="testimonial-content">
+              <p>
+                "Атмосфера роскоши и комфорта, внимательный персонал и
+                потрясающий результат! Массаж горячими камнями в исполнении
+                мастеров EXCALIBUR — это непередаваемые ощущения и полное
+                обновление."
+              </p>
+              <div class="testimonial-author">
+                <div>
+                  <h4>Аноним</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <div class="testimonial-content">
+              <p>
+                "Атмосфера роскоши и комфорта, внимательный персонал и
+                потрясающий результат! Массаж горячими камнями в исполнении
+                мастеров EXCALIBUR — это непередаваемые ощущения и полное
+                обновление."
+              </p>
+              <div class="testimonial-author">
+                <div>
+                  <h4>Аноним</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <div class="testimonial-content">
+              <p>
+                "Атмосфера роскоши и комфорта, внимательный персонал и
+                потрясающий результат! Массаж горячими камнями в исполнении
+                мастеров EXCALIBUR — это непередаваемые ощущения и полное
+                обновление."
+              </p>
+              <div class="testimonial-author">
+                <div>
+                  <h4>Аноним</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <div class="testimonial-content">
+              <p>
+                "Атмосфера роскоши и комфорта, внимательный персонал и
+                потрясающий результат! Массаж горячими камнями в исполнении
+                мастеров EXCALIBUR — это непередаваемые ощущения и полное
+                обновление."
+              </p>
+              <div class="testimonial-author">
+                <div>
+                  <h4>Аноним</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Свяжитесь с нами</h2>
+        <div class="contact-container">
+          <form class="contact-form">
+            <input type="text" placeholder="Ваше имя" required />
+            <input type="tel" placeholder="Ваш телефон" required />
+            <button type="submit">Отправить заявку</button>
+          </form>
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="contact-info-text">
+                <h3>Адрес</h3>
+                <p>Санкт-Петербург</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <i class="fas fa-phone-alt"></i>
+              <div class="contact-info-text">
+                <h3>Телефон</h3>
+                <p>+7 (999) 123-45-67</p>
+                <p>+7 (495) 987-65-43</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <i class="fas fa-envelope"></i>
+              <div class="contact-info-text">
+                <h3>Email</h3>
+                <p>info@excalibur-spa.ru</p>
+                <p>booking@excalibur-spa.ru</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <i class="fas fa-clock"></i>
+              <div class="contact-info-text">
+                <h3>Часы работы</h3>
+                <p>Пн-Пт: 9:00 - 21:00</p>
+                <p>Сб-Вс: 10:00 - 20:00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Карта -->
+    <section class="map">
+      <div class="map-container">
+        <!-- Здесь будет iframe с Google Maps или Яндекс.Картами -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.3801981622246!2d37.58959377680467!3d55.74953297346039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a50b315e573%3A0xa886bf5a3d9b2e68!2sArbat%20St%2C%2025%2C%20Moscow%2C%20Russia!5e0!3m2!1sen!2s!4v1625574284797!5m2!1sen!2s"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img
+              src="/assets/full-logo.svg"
+              alt="Excalibur logo"
+              width="200px"
+              height="300px"
+            />
+            <p>Премиальный массажный салон</p>
+          </div>
+          <div class="footer-links">
+            <div class="footer-links-column">
+              <h4>Меню</h4>
+              <ul>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#team">Девушки</a></li>
+                <li><a href="#gallery">Акции</a></li>
+                <li><a href="#contact">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="footer-links-column">
+              <h4>Услуги</h4>
+              <ul>
+                <li><a href="#services">Классический массаж</a></li>
+                <li><a href="#services">Тайский массаж</a></li>
+                <li><a href="#services">Массаж горячими камнями</a></li>
+                <li><a href="#services">Антицеллюлитный массаж</a></li>
+                <li><a href="#services">Spa-программы</a></li>
+              </ul>
+            </div>
+            <div class="footer-links-column">
+              <h4>Контакты</h4>
+              <ul>
+                <li><i class="fas fa-map-marker-alt"></i> Санкт-Петербург</li>
+                <li><i class="fas fa-phone-alt"></i> +7 (999) 123-45-67</li>
+                <li><i class="fas fa-envelope"></i> info@excalibur-spa.ru</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-vk"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+          </div>
+          <p class="footer-copyright">Интим услуги не предоставляются.</p>
+          <p class="footer-copyright">© 2025 EXCALIBUR. Все права защищены.</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      // Простой скрипт для бургер-меню
+      document
+        .getElementById("hamburger-btn")
+        .addEventListener("click", function () {
+          this.classList.toggle("active");
+          document.getElementById("nav-menu").classList.toggle("active");
+          console.log("Бургер кликнут");
+        });
+    </script>
+    <script>
+      var splide = new Splide(".splide");
+      var bar = splide.root.querySelector(".my-carousel-progress-bar");
+
+      // Updates the bar width whenever the carousel moves:
+      splide.on("mounted move", function () {
+        var end = splide.Components.Controller.getEnd() + 1;
+        var rate = Math.min((splide.index + 1) / end, 1);
+        bar.style.width = String(100 * rate) + "%";
+      });
+
+      splide.mount();
+    </script>
+  </body>
+</html>
